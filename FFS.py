@@ -14,19 +14,6 @@ import pandas as pd
 
 import pandas as pd
 
-df = pd.read_csv(r'C:\Users\HP\Downloads\All-floods-in-Bangladesh_Dataset.csv')
-
-df.dropna()
-s=df['m']
-b=df['d']
-for i in range(0,99):
-    t=(30*s[i]+b[i])
-    print(t)
-
-
-# In[ ]:
-
-
 
 
 
@@ -64,9 +51,6 @@ model = DecisionTreeClassifier()
 model.fit(x_train,y_train)
 p=model.predict(x_test)
 accuracy_score(y_test,p)
-
-
-# In[ ]:
 
 
 
